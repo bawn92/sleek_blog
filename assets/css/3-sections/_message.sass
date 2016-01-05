@@ -1,0 +1,51 @@
+form
+  max-width: 450px
+  margin: 0 auto 50px
+
+  input, textarea
+    border: 2px solid $color-1
+    width: 100%
+    +box-sizing(border-box)
+    padding: 10px
+
+    &:focus
+      outline: none
+      border-color: lighten($color-1, 50%)
+
+  .submit-wrap
+    text-align: right
+
+
+
+  [type="submit"]
+    margin-top: 13px
+    background: $color-1
+    color: white
+    font-size: 18px
+    text-transform: uppercase
+    width: 33%
+    &:hover
+      background: lighten($color-1, 20%)
+      border-color: lighten($color-1, 20%)
+
+  textarea
+    height: 10em
+
+  .contact-info-group
+    label
+      width: 50%
+      float: left
+      +box-sizing(border-box)
+
+      &:nth-child(1)
+        padding-right: 10px
+
+      &:nth-child(2)
+        padding-left: 10px
+
+  label
+    display: block
+    margin-bottom: 20px
+
+    span
+      display: block

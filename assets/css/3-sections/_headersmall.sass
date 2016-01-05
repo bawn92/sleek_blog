@@ -1,0 +1,40 @@
+#h_small
+  height:170px
+  background: url(../img/galway2.jpg) center center
+  background-size: cover
+
+
+
+  #nav_small
+    float: right
+    margin: 30px 30px 30px
+
+    a
+      display: inline-block
+      margin-left: 10px
+      color: rgba(0, 0, 0,0.5)
+      @extend %small-bold
+
+      &:hover
+        color: rgba(0,0,0,1)
+
+  #h1_small
+    display: inline-block
+    font:
+      size: 72px
+      weight: 700
+    color: rgba(0, 0, 0,0.5)
+    text-transform: uppercase
+    letter-spacing: 0.05cm
+    span
+      display: inline-block
+      padding: 0.2em 0.5em
+      border: rgba(0, 0, 0,0.5) solid 10px
+
+
+
+  .kicker
+    text-align: center
+    @extend %small-bold
+    line-height: 1
+    color: rgba(0,0,0,0.5)

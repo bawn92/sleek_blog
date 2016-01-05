@@ -1,0 +1,32 @@
+.alt-section
+
+
+.thumb-container
+  max-width: 960px
+  margin: 0px auto
+  padding-bottom: 100px
+  +clearfix
+
+  .thumb-unit
+    display: block
+    width: 25%
+    float: left
+    position: relative
+    padding: 10px
+    padding-top: 20%
+    overflow: hidden
+
+    background:
+      image: url(../img/project.png)
+      position: center center
+      repeat: no-repeat
+      size: cover
+
+    .thumb-overlay
+      +position(absolute, 100% 0px null 0px)
+      height: 100%
+      background: fade-out($accent, 0.1)
+      +transition
+
+    &:hover .thumb-overlay
+      +position(absolute, 0% 0px null 0px)

@@ -1,0 +1,102 @@
+
++MQ(S)
+  .about-lock
+    margin: auto
+    .face-img
+      +size(180px)
+      +display(flex)
+      margin: auto
+      border-radius: 60%
+      background: url(../img/face.JPG) no-repeat
+
+
+    .face1-img
+      +size(180px)
+      border-radius: 50%
+      background: url(../img/android.JPG)
+      margin: auto
+    .flip-container
+      perspective: 1000
+      &:hover .flipper, &.hover .flipper
+        transform: rotateY(180deg)
+      +size(200px)
+      border-radius: 50%
+      +order(3)
+    .front, .back
+      +size(200px)
+      border-radius: 50%
+
+    .flipper
+      transition: 0.6s
+      transform-style: preserve-3d
+      position: relative
+
+    .front, .back
+      backface-visibility: hidden
+      position: absolute
+      top: 0
+      left: 0
+
+    .front
+      z-index: 2
+      transform: rotateY(0deg)
+
+    .back
+      transform: rotateY(180deg)
+
+    .flaticon-cogwheel28
+      display: none
+    .flaticon-computer1
+      display: none
+    .flaticon-hosting
+      display: none
+    .flaticon-computers13
+      display: none
+
+
++MQ(M)
+  .about-lock
+    max-width:680px
+    +display(flex)
+    margin: 0 auto
+    +align-items(center)
+    +justify-content(space-between)
+
+    .flaticon-cogwheel28
+      +order(1)
+      display: block
+    .flaticon-computer1
+      +order(2)
+      display: block
+    .flaticon-hosting
+      +order(4)
+      display: block
+    .flaticon-computers13
+      +order(5)
+      display: block
+
+    .glyph-icon
+      &:hover
+        +transform(scale(1.2))
+
+    .glyph-icon:before
+      display: block
+      font-size: 60px
+      line-height: 70px
+      color: $color-1
+      +transition()
+      margin-left: 0
+
++MQ(L)
+  .about-lock
+    max-width:980px
+
+
+
+.blurb
+  max-width: 750px
+  padding: 0 15px
+  margin: 50px auto
+  font-size: 22px
+  font-weight: 30
+  text-align: center

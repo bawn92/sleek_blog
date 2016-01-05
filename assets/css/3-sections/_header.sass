@@ -1,0 +1,122 @@
+
+
+
++MQ(L)
+  .logo
+    +size(70px)
+    background: url(../img/GOC1.png) center center
+    background-size: 70px 47px
+    background-repeat: no-repeat
+    position: fixed
+    left: 5px
+    top: 0px
+    padding-right: 5px
+    padding-bottom: 10px
+    margin-bottom: 10px
+    z-index: 888
+
+  a.back-to-top
+    display: none
+    width: 40px
+    height: 40px
+    text-indent: -9999px
+    position: fixed
+    z-index: 998
+    right: 20px
+    bottom: 20px
+    background: url(../img/silhouette125.svg) no-repeat center
+    background-size: 15px
+    background-color: $color-1
+    -webkit-border-radius: 30px
+    -moz-border-radius: 30px
+    border-radius: 30px
+
++MQ(S)
+  .arrow
+    display: none
+  .logo
+    +size(90px)
+    background: url(../img/GOC1.png) center center
+    width: 88px
+    height: 47px
+    background-size: 88px 47px
+    background-repeat: no-repeat
+    float: left
+    margin:30px 0 0 30px
+
+
+  a.back-to-top
+    display:none
+
+
+
+header
+  +MQ(S)
+    height:300px
+  +MQ(M)
+    height:390px
+  +MQ(L)
+    height:450px
+  background: url(../img/galway2.jpg) center center
+  background-size: cover
+
+
+  nav
+    float: right
+    margin: 30px 30px 30px
+
+    a
+      +MQ(S)
+        display: none
+      +MQ(M)
+        display: inline-block
+      margin-left: 20px
+      color: rgba(0, 0, 0,0.5)
+      @extend %small-bold
+
+
+      &:hover
+        color: rgba(0,0,0,1)
+
+  h1
+    text-align: center
+
+    color: rgba(0, 0, 0,0.5)
+    text-transform: uppercase
+    letter-spacing: 0.05cm
+    margin-bottom: 20px
+    clear: both
+    +MQ(S)
+      padding-top: 20px
+      font:
+        size: 32px
+        weight: 350
+    +MQ(M)
+      padding-top: 10px
+      font:
+        size: 30px
+        weight: 350
+
+    +MQ(L)
+      padding-top: 50px
+      font:
+        size: 72px
+        weight: 700
+    span
+      display: inline-block
+      padding: 0.2em 0.5em
+      +MQ(S)
+        padding: 0.2em 0.5em
+      +MQ(M)
+        padding: 0.1em 0.2em
+      +MQ(L)
+        padding: 0.2em 0.5em
+      border: rgba(0, 0, 0,0.5) solid 10px
+
+
+
+  .kicker
+    text-align: center
+    @extend %small-bold
+    line-height: 1
+    color: rgba(0,0,0,0.5)

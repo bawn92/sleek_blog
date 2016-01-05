@@ -1,0 +1,18 @@
+// breakpoints
+
+$S: 220px
+$M: 650px
+$L: 1070px
+
+// media queries
+
+=MQ($canvas)
+  @if $canvas == S
+    @media only screen and (min-width: $S)
+      @content
+  @else if $canvas == M
+    @media only screen and (min-width: $M)
+      @content
+  @else if $canvas == L
+    @media only screen and (min-width: $L)
+      @content

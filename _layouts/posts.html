@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% include header_small.html %}
+
+
+
+<h2 id="Blog"> Blog Posts</h2>
+<hr class="bar-blog"> </hr>
+  {% for post in site.categories['blog'] %}
+    <div class="post-header">
+      <a href="{{post.url}}"><h1 class="post-title">{{ post.title }}</h1></a>
+    </div>
+    <div class="post-header">
+      <p class="post-meta">{{ post.date | date: "%B %-d, %Y — %H:%M" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
+    </div>
+
+  {% endfor %}
+  <hr class="bar-blog"> </hr>
+<div class="temp-posts">
+
+</div>

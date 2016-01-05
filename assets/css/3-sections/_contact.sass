@@ -1,0 +1,51 @@
+.section-contact
+  background: #e5eaee
+  text-align: center
+
+.social-links
+  max-width: 700px
+  margin: 0px auto 50px
+  +display(flex)
+  +justify-content(space-around)
+
+  .glyph-icon
+    &:hover
+      +transform(scale(1.2))
+
+  .glyph-icon:before
+    display: block
+    font-size: 60px
+    line-height: 70px
+    color: $color-1
+    +transition()
+    margin-left: 0
+
+
+
+.bar
+  width: 250px
+  height: 0px
+  margin: 40px auto 40px
+  border-top: 4px solid $color-1
+
+
+.bar-blog
+  width: 250px
+  height: 0px
+  margin: 20px auto 20px
+  border-top: 4px solid $color-1
+
+.blog-end
+  padding-top: 100px
+
+.biglink
+  display: inline-block
+  margin-bottom: 70px
+  color: $color-1
+  font:
+    size: 72px
+    weight: 300
+
+.biglink
+  &:hover
+    +transform(scale(1.02))

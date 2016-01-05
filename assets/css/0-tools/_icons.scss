@@ -1,0 +1,77 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?uh228n');
+	src:url('../fonts/icomoon.eot?#iefixuh228n') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?uh228n') format('truetype'),
+		url('../fonts/icomoon.woff?uh228n') format('woff'),
+		url('../fonts/icomoon.svg?uh228n#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter-square:before {
+	content: "\f081";
+}
+.icon-facebook-square:before {
+	content: "\f082";
+}
+.icon-linkedin-square:before {
+	content: "\f08c";
+}
+.icon-linkedin:before {
+	content: "\f0e1";
+}
+.icon-github-alt:before {
+	content: "\f113";
+}
+.icon-youtube-square:before {
+	content: "\f166";
+}
+.icon-youtube:before {
+	content: "\f167";
+}
+.icon-dropbox:before {
+	content: "\f16b";
+}
+.icon-stack-overflow:before {
+	content: "\f16c";
+}
+.icon-instagram:before {
+	content: "\f16d";
+}
+.icon-tumblr-square:before {
+	content: "\f174";
+}
+.icon-google:before {
+	content: "\f1a0";
+}
+.icon-reddit:before {
+	content: "\f1a1";
+}
+.icon-reddit-square:before {
+	content: "\f1a2";
+}
+.icon-stumbleupon-circle:before {
+	content: "\f1a3";
+}
+.icon-stumbleupon:before {
+	content: "\f1a4";
+}
+.icon-git-square:before {
+	content: "\f1d2";
+}
