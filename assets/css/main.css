@@ -237,7 +237,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -633,9 +634,7 @@ h2, header nav a, header .kicker, footer .lockup a, #h_small #nav_small a, #h_sm
     background-size: 88px 47px;
     background-repeat: no-repeat;
     float: left;
-    margin: 30px 0 0 30px; }
-  a.back-to-top {
-    display: none; } }
+    margin: 30px 0 0 30px; } }
 
 header {
   background: url(../img/galway2.jpg) center center;
@@ -712,13 +711,11 @@ footer {
       clear: both;
       content: "";
       display: table; }
-    footer .lockup .content-wrap {
-      float: left; }
-      footer .lockup .content-wrap .copyright {
-        margin: 0;
-        text-transform: uppercase;
-        font-size: 12px;
-        color: rgba(0, 0, 0, 0.4); }
+    footer .lockup .content-wrap .copyright {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.4); }
     footer .lockup a {
       color: rgba(0, 0, 0, 0.6);
       display: inline-block;
@@ -856,7 +853,6 @@ footer {
       display: block; }
     .about-lock .glyph-icon:hover {
       -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
       transform: scale(1.2); }
     .about-lock .glyph-icon:before {
       display: block;
@@ -903,7 +899,6 @@ footer {
   -ms-flex-pack: distribute; }
   .social-links .glyph-icon:hover {
     -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
     transform: scale(1.2); }
   .social-links .glyph-icon:before {
     display: block;
@@ -938,7 +933,6 @@ footer {
 
 .biglink:hover {
   -webkit-transform: scale(1.02);
-  -ms-transform: scale(1.02);
   transform: scale(1.02); }
 
 *, *:after, *:before {
@@ -1052,16 +1046,13 @@ footer {
   0% {
     opacity: 0;
     -webkit-transform: scale(0.5);
-    -ms-transform: scale(0.5);
     transform: scale(0.5); }
   60% {
     opacity: 1;
     -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
     transform: scale(1.2); }
   100% {
     -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1); } }
 
 .cd-timeline-content {
@@ -1089,7 +1080,7 @@ footer {
     line-height: 1.6; }
   .cd-timeline-content .cd-read-more {
     float: right;
-    padding: 0.8em 1em;
+    padding: .8em 1em;
     background: #acb7c0;
     color: #ffffff;
     border-radius: 0.25em; }
@@ -1177,16 +1168,13 @@ footer {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-100px);
-    -ms-transform: translateX(-100px);
     transform: translateX(-100px); }
   60% {
     opacity: 1;
     -webkit-transform: translateX(20px);
-    -ms-transform: translateX(20px);
     transform: translateX(20px); }
   100% {
     -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
     transform: translateX(0); } }
 
 @-webkit-keyframes cd-bounce-2-inverse {
@@ -1203,16 +1191,13 @@ footer {
   0% {
     opacity: 0;
     -webkit-transform: translateX(100px);
-    -ms-transform: translateX(100px);
     transform: translateX(100px); }
   60% {
     opacity: 1;
     -webkit-transform: translateX(-20px);
-    -ms-transform: translateX(-20px);
     transform: translateX(-20px); }
   100% {
     -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
     transform: translateX(0); } }
 
 form {
